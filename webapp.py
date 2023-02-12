@@ -88,7 +88,7 @@ def createmash(Singer,num,dur):
 
 
 st.set_page_config(page_title="MASHUP")
-st.subheader("MASHUP CREATOR")
+st.subheader("MASHUP CREATOR:notes:")
 
 st.write("Enter details: ")
 
