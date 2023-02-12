@@ -89,6 +89,7 @@ def createmash(Singer,num,dur):
 
 st.set_page_config(page_title="MASHUP")
 st.subheader("MASHUP CREATOR:notes:")
+st.write('Made by Dhruv Singla')
 
 st.write("Enter details: ")
 
