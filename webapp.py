@@ -1,3 +1,23 @@
+import os
+import glob
+
+# Get a list of all files in the folder
+folder = os.getcwd()
+files = glob.glob(folder + "/*")
+
+# Count the number of MP3 and MP4 files in the list
+mp3_files = [f for f in files if f.endswith(".mp3")]
+mp4_files = [f for f in files if f.endswith(".mp4")]
+
+if(len(mp3_files)>0):
+    folder=os.getcwd()
+    for file in glob.glob(os.path.join(folder, '*.mp3')):
+        os.remove(file)
+    
+if(len(mp4_files)>0):
+    folder=os.getcwd()
+    for file in glob.glob(os.path.join(folder, '*.mp4')):
+        os.remove(file)
 import streamlit as st
 from pytube import YouTube
 import os
